@@ -1,0 +1,105 @@
+/*-- -------------------------- -->
+<---           Stats            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #stats-1575 {
+    padding: var(--sectionPadding);
+    background-color: #1a1a1a;
+    position: relative;
+    z-index: 1;
+  }
+  #stats-1575 .cs-container {
+    width: 100%;
+    /* Changes to 1280px at small desktop */
+    max-width: 59.6875rem;
+    margin: auto;
+  }
+  #stats-1575 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3.75rem;
+  }
+  #stats-1575 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 47%;
+    max-width: 15rem;
+    margin: 0;
+    padding: 0 0.75rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #stats-1575 .cs-icon {
+    width: 3rem;
+    height: auto;
+    margin: 0 0 1.5rem;
+    display: block;
+  }
+  #stats-1575 .cs-number {
+    /* 31px - 61px */
+    font-size: clamp(1.9375rem, 4.3vw, 2.4375rem);
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 400;
+    margin: 0 0 0.25rem 0;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #stats-1575 .cs-desc {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    color: var(--bodyTextColorWhite);
+  }
+  #stats-1575 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #stats-1575 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #stats-1575 .cs-card-group {
+    justify-content: space-between;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #stats-1575 .cs-container {
+    max-width: 80rem;
+  }
+  #stats-1575 .cs-card-group {
+    max-width: 39.375rem;
+    justify-content: flex-start;
+  }
+  #stats-1575 .cs-item {
+    text-align: left;
+    max-width: 12.5rem;
+    align-items: flex-start;
+  }
+}
+
